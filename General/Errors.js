@@ -1,0 +1,12 @@
+var Errors = {
+    MISSING_DATA: 1,
+    INVALID_DATA: 2,
+    INVALID_EMAIL: 3,
+    INVALID_PHONE: 4,
+    INVALID_CONFIRMATION_CODE: 5,
+    REPORTER_LOGGED_OUT: 6,
+    INTERNAL_ERROR: 7,
+    REQUIRED_FIELD: 8
+};
+
+module.exports = Errors;
