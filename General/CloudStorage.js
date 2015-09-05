@@ -11,12 +11,12 @@ var Helper = require("./Helper.js");
 var CloudStorage = function(){
     var self = this;
 
-    var projectId = "sosiety-server";
+    var projectId = "sayvu-node-server";
     var bucketName = "sosiety";
 
     var gcs = gcloud.storage({
-        projectId: projectId,
-        keyFileName: '/files/gcloud_api/Sosiety server-c34f6e0772da.json'
+        projectId: projectId
+        //keyFileName: '/files/gcloud_api/Sosiety server-c34f6e0772da.json'
     });
 
     var bucket = gcs.bucket(bucketName);
