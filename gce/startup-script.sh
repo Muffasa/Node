@@ -15,7 +15,7 @@
 
 # [START startup]
 # Talk to the metadata server to get the project id
-PROJECTID=$(curl -s "http://metadata.google.internal/computeMetadata/v1/project/project-id" -H "Metadata-Flavor: Google")
+PROJECTID=$(curl -s "http://metadata.google.internal/computeMetadata/v1/project/sosiety-server" -H "Metadata-Flavor: Google")
 
 # Install logging monitor and configure it to pickup application logs
 # [START logging]
@@ -57,8 +57,8 @@ curl -sL https://deb.nodesource.com/setup | bash -
 apt-get install -y git nodejs build-essential supervisor
 
 # Get the source code
-git config --global credential.helper gcloud.sh
-git clone https://source.developers.google.com/p/$PROJECTID /opt/app
+# # git config --global credential.helper gcloud.sh
+git clone https://github.com/Muffasa/Node.git /opt/app
 
 # Install app dependencies
 cd /opt/app
