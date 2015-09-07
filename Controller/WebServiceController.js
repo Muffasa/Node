@@ -23,7 +23,7 @@ var GCM = require("./../General/GCM.js");
  */
 function WebServiceController(router) {
     router.get("/",function(req, res){
-        //@todo Log error
+        res.send("yo yo yo this is working!")
     });
 
     router.post("/",function(req, res){

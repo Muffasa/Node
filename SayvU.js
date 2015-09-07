@@ -38,8 +38,9 @@ function SayvU(){
     };
 
     self.startServer = function() {
-        app.listen(3000,function(){
-            console.log("Server is running at port 3000.");
+        var PORT = process.env.PORT || '8080'
+        app.listen(PORT, '0.0.0.0',function(){
+            console.log("Server is running at port " + PORT);
         });
     };
 
